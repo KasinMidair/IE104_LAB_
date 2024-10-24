@@ -1,0 +1,186 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/*-----------------Font Format---------------- */
+
+/* 23520509 */
+@font-face {
+  font-family: "Playfair";
+  src: url("./fonts/Playfair/static/Playfair_144pt-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("./fonts/Playfair/static/Playfair_144pt-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Play_write";
+  src: url("./fonts/Playwrite_GB_S/static/PlaywriteGBS-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+/* 23520509 */
+body {
+  font-family: "Play_write", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+h1 {
+  font-family: "Playfair", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+h2 {
+  font-family: "Playfair", sans-serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+/* ---------------Text Format------------------- */
+/* 23520509 */
+html {
+  font-size: 10px;
+}
+body {
+  line-height: 3em;
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2 {
+  letter-spacing: 0.2rem;
+}
+p {
+  letter-spacing: 0.02rem;
+  word-spacing: 0.5rem;
+}
+::selection h2 + p {
+  text-indent: 2rem;
+}
+
+/* ----------LINK---------- */
+/* 23520509 */
+a {
+  color: #aa6666;
+  float: url;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active:not(nav a) {
+  outline: none;
+  color: #aa6666;
+  font-size: 1.6rem;
+  text-shadow: 0rem 0rem 0.5rem rgb(255, 0, 0),
+    1rem 0.2rem 5rem rgb(255, 92, 92);
+}
+
+/* 23520509 */
+a::after {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("external-link-52.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+/* -----------------LIST---------------- */
+
+/* 23520509 */
+ol{
+  list-style-type: lower-latin;
+}
+nav ul{
+  list-style: none;
+  margin:0;
+
+
+}
+/* ------------NAVIGATION---------------- */
+/* 23520509 */
+nav{
+  line-height:6rem ;
+}
+
+nav a::after{
+  display: none;
+}
+
+nav a{
+  box-sizing: content-box;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 1.2rem;
+  border: 0.2rem solid rgb(184, 128, 128) ;
+  width: 15rem;
+  height: 4rem;
+}
+nav a:hover{
+  background-color:rgb(184, 128, 128) ;
+  color: white;
+    width: 17rem;
+    margin-left: -0.9rem;
+}
+
+nav a:active{
+  width: 15rem;
+  margin: auto;
+}
